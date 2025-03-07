@@ -15,6 +15,842 @@
   </style>
 </head>
 <body>
+  
+  <div class="pricing-wrapper home-wrapper mb-0">
+    <div class="container-fluid">
+      <div class="row mx-2">
+        <div class="col-12 col-md mb-0">
+          <div class="switch-button-wrapper my-3">
+            <div class="switch-button">
+              <input class="switch-button-checkbox" onchange="changepriceswitchbtnapi(this.checked);" type="checkbox"
+                name="price" id="switch-plan" data-gtm-form-interact-field-id="0">
+              <label class="switch-button-label" for="switch-plan"><span
+                  class="switch-button-label-span">Yearly</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="monthlyPlan" class="container-fluid mt-4" style="">
+      <div class="prdbox-wrapper row justify-content-center mx-2">
+
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Basic</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Freelancer</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="chatbotbasicprice" class="text-right jettext">12 </span>
+                    <br>
+                    <strike id="chatbotstandard"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/MONTHLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3114"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">100
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">1
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">2000
+                    Chat Message / Month
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">100k
+                    Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14" class="mr-2">Official
+                    WhatsApp API
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Standard</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Small Size Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="chatbotstandardprice" class="text-right jettext">29 </span>
+                    <br>
+                    <strike id="chatbotstandard"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/MONTHLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3111"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">300
+                    &nbsp;<span>web pages</span> <span class="toolTip"><i class="fa fa-info-circle"></i><span
+                        class="tooltipText">A web page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">2
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5000
+                    Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">300k
+                    Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14" class="mr-2">Official
+                    WhatsApp API
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Professional</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Medium Size Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="chatbotprofessionalprice" class="text-right jettext">79 </span>
+                    <br>
+                    <strike id="chatbotprofessional"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/MONTHLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3112"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">1000
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">unlimited Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">1Million Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Official WhatsApp API
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Enterprise</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Large Scale Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="chatbotenterpriseprice" class="text-right jettext">299 </span>
+                    <br>
+                    <strike id="chatbotenterprise"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/MONTHLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3113"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5000
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">10
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">5Million Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Official WhatsApp API
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="yearlyPlan" class="container-fluid mt-4" style="">
+      <div class="row prdbox-wrapper mx-2">
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Basic</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Freelancers</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="basicYearlyPrice" class="text-right jettext">120 </span>
+                    <br>
+                    <strike id="chatbotbasicyearlyprice"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/YEARLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3115" class="mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">100
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">1
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">2000
+                    Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">100k
+                    Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14" class="mr-2">Official
+                    WhatsApp API
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Standard</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Small Size Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="standardYearlyPrice" class="text-right jettext">290 </span>
+                    <br>
+                    <strike id="chatbotstandardpriceyearly"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/YEARLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3116"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">300
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">2
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5000
+                    Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">300k
+                    Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-cross.svg" alt="check-circle" width="14" height="14" class="mr-2">Official
+                    WhatsApp API
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Professional</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Medium Size Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="professionalYearlyPrice" class="text-right jettext">790 </span>
+                    <br>
+                    <strike id="chatbotprofessionalyearlyplan"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/YEARLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3117"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">1000
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">1Million Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Official WhatsApp API
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 prdbox mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="row mb-0">
+                <div class="col-auto mb-0">
+                  <p style="font-size:24px;font-weight:600;">Enterprise</p>
+                </div>
+
+                <div class="col-12">
+                  <p class="text-gray fs-14">Large Scale Businesses</p>
+                </div>
+              </div>
+              <div class="row cart-center-text">
+                <div class="currency mr-2">$</div>
+                <div class="center mb-0">
+                  <span class="font-48">
+                    <span id="enterpriseYearlyPlan" class="text-right jettext">2999 </span>
+                    <br>
+                    <strike id="chatbotenterprisepriceplan"></strike>
+                  </span>
+                </div>
+                <div class="color-chng font-normal mb-0">/YEARLY</div>
+              </div>
+              <div class="text-center pt-3 pb-5">
+                <a href="/checkout?variantid=3118"
+                  class="monthlypricelblapi mx-auto btn-cyan-filled text-center w-50">Buy Now</a>
+              </div>
+              <div>
+
+
+                <ul>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">5000
+                    web pages <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">A web
+                        page is any one website page URL.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">10
+                    Website <span class="toolTip"><i class="fa fa-info-circle"></i><span class="tooltipText">1 Website =
+                        1 chatbot.</span></span>
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Message / Month
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">5Million Characters and free above it if using your openAI Key
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Website Chatbot Flow
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Inbox
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Ratings
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    Analytics
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Unlimited Chat Replies
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14" class="mr-2">Chat
+                    History
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Remove "Powered By" Branding
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">WordPress Plugin
+                  </li>
+
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Customizable chatbot Design
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">ChatGPT 4.0
+                  </li>
+                  <li>
+                    <img src="/images/hero-check-green.svg" alt="check-circle" width="14" height="14"
+                      class="mr-2">Official WhatsApp API
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <center>
   <h2 class="jettext font-weight-600 text-center" style="font-size: 36px;">AI Chatbot Pricing Comparison Plans</h2>
   <p class="text-center pb-4 fs-14">Can’t decide which plan is right for you? Check out feature comparison below.</p>
